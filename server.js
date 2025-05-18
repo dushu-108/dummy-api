@@ -413,23 +413,6 @@ app.get('/api/holdings', (req, res) => {
   res.json(holdingsData);
 });
 
-// Capital Gains API endpoint
-app.get('/api/capital-gains', (req, res) => {
-  const capitalGainsData = {
-    "capitalGains": {
-      "stcg": {
-        "profits": 70200.88,
-        "losses": 1548.53
-      },
-      "ltcg": {
-        "profits": 5020,
-        "losses": 3050
-      }
-    }
-  };
-  res.json(capitalGainsData);
-});
-
 app.listen(port, () => {
   console.log(`Mock API server running at http://localhost:${port}`);
 });
