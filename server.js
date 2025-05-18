@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 3000;
 
 // Enable CORS to allow the React app to make requests to this server
 app.use(cors());
