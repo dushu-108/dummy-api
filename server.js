@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 
 // Holdings API endpoint
-app.get('/api/holdings', (req, res) => {
+app.get('/', (req, res) => {
   const holdingsData = [
     {
       "coin": "USDC",
